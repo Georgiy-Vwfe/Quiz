@@ -14,6 +14,7 @@
 		3F2413022150ED62009E146A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2413002150ED62009E146A /* LaunchScreen.storyboard */; };
 		3F24130A2150FF83009E146A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2413092150FF83009E146A /* QuestionViewController.swift */; };
 		3F24130C2150FF92009E146A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24130B2150FF92009E146A /* ResultsViewController.swift */; };
+		3F6854212154F37200459234 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6854202154F37200459234 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F2413032150ED62009E146A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F2413092150FF83009E146A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3F24130B2150FF92009E146A /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		3F6854202154F37200459234 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3F2412F62150ED60009E146A /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				3F6854202154F37200459234 /* Question.swift */,
 				3F2412F92150ED60009E146A /* IntroductionViewController.swift */,
 				3F2413092150FF83009E146A /* QuestionViewController.swift */,
 				3F24130B2150FF92009E146A /* ResultsViewController.swift */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6854212154F37200459234 /* Question.swift in Sources */,
 				3F2412FA2150ED60009E146A /* IntroductionViewController.swift in Sources */,
 				3F2412F82150ED60009E146A /* AppDelegate.swift in Sources */,
 				3F24130A2150FF83009E146A /* QuestionViewController.swift in Sources */,

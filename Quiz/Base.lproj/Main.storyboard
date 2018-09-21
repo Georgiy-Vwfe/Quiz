@@ -179,7 +179,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-KR-26z">
                                         <rect key="frame" x="0.0" y="156" width="448" height="31"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Ответить"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -211,7 +211,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z31-CC-0Ii">
                                         <rect key="frame" x="0.0" y="60" width="448" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Ответить"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -239,6 +239,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="spN-sw-AXj"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="AEO-iH-wKj" id="Lbp-CS-GU2"/>
+                        <outlet property="multiLabel2" destination="aOw-Hy-blQ" id="Loe-A8-zx5"/>
+                        <outlet property="multiLabel3" destination="u4P-cz-pPu" id="4IH-xj-0cS"/>
+                        <outlet property="multiLabel4" destination="VMj-AO-uFT" id="lBc-Cp-eap"/>
+                        <outlet property="multipleStackView" destination="CL0-7A-sny" id="Ikz-oI-Jlj"/>
+                        <outlet property="questionLabel" destination="5Dl-7u-KPK" id="HYd-Bp-HDm"/>
+                        <outlet property="questionProgressView" destination="ax5-Pi-bT5" id="J6A-uO-tuW"/>
+                        <outlet property="rangedLabel1" destination="vt6-mY-zOa" id="o2Z-LZ-L8E"/>
+                        <outlet property="rangedLabel2" destination="bQ7-Cv-GHI" id="SoD-F9-n7f"/>
+                        <outlet property="rangedStackView" destination="5i2-dy-3j7" id="GvO-fI-xqV"/>
+                        <outlet property="singleButton1" destination="wjY-Sl-g60" id="0hc-bY-Nel"/>
+                        <outlet property="singleButton2" destination="ZCW-j2-KLW" id="DbT-kt-0Js"/>
+                        <outlet property="singleButton3" destination="VzS-Pa-LNO" id="8GH-qY-jYD"/>
+                        <outlet property="singleButton4" destination="T2U-5W-fJi" id="C6d-vi-tfE"/>
+                        <outlet property="singleStackView" destination="Zdi-fs-39Z" id="BS0-Ww-EGl"/>
                         <segue destination="YUY-QZ-gOD" kind="show" identifier="ResultsSegue" id="L3t-03-Avx"/>
                     </connections>
                 </viewController>
