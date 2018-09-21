@@ -36,9 +36,8 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        // Do any additional setup after loading the view.
     }
-
+    
     func updateUI() {
         singleStackView.isHidden = true
         multipleStackView.isHidden = true
@@ -48,7 +47,7 @@ class QuestionViewController: UIViewController {
         
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
-        let totalProgress = Float(questionIndex)/Float(questions.count)
+        let totalProgress = Float(questionIndex) / Float(questions.count)
         
         questionLabel.text = currentQuestion.text
         questionProgressView.setProgress(totalProgress, animated: true)
@@ -59,11 +58,11 @@ class QuestionViewController: UIViewController {
         case .multiple:
             updateMultipleStack(using: currentAnswers)
         case .ranged:
-            updateMultipleStack(using: currentAnswers)
+            updateRangedStack(using: currentAnswers)
         }
     }
     
-    func updateSingleStack(using answers:[Answer]) {
+    func updateSingleStack(using answers: [Answer]) {
         singleStackView.isHidden = false
         singleButton1.setTitle(answers[0].text, for: .normal)
         singleButton2.setTitle(answers[1].text, for: .normal)
@@ -84,5 +83,4 @@ class QuestionViewController: UIViewController {
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
-
 }
