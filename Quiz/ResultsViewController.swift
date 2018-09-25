@@ -9,27 +9,34 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+    @IBOutlet weak var resultAnswerLabel: UILabel!
+    @IBOutlet weak var resultDefinitionLabel: UILabel!
+    
+    var responses: [Answer]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        calculatePersonalityResult()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func calculatePersonalityResult() {
+        var frequencyOfAnswers = [AnimalType: Int]()
+        //        var responseTypes = [AnimalType]()
+        //        for response in responses{
+        //            responseTypes.append(response.type)
+        //        }
+        
+        let animalTypes = responses.map { $0.type }
+        for animalType in animalTypes {
+            frequencyOfAnswers[animalType] =
+                (frequencyOfAnswers[animalType] ?? 0) + 1
+        }
+        let mostCommonAnswer = frequencyOfAnswers.sorted
+        { $0.1 > $1.1 }.first!.key
+        
+        resultAnswerLabel.text = "Вы - \(mostCommonAnswer.rawValue)!"
+        resultDefinitionLabel.text = mostCommonAnswer.definition
     }
-    */
-
+    
 }
